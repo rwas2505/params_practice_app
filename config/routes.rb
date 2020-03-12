@@ -9,5 +9,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/params" => "params#home"
+    get "/params/:message" => "params#home"
+    post "/params" => "params#home"
+    
   end
 end
